@@ -2,6 +2,22 @@
 
 REST API for conference room booking using ASP.NET Core Minimal API and Entity Framework Core.
 
+## What the API does
+
+The API allows users to:
+
+* create, update, and delete conference rooms;
+* configure room capacity and hourly rental rates;
+* assign available additional services to rooms;
+* retrieve the list of conference rooms and additional services;
+* search for rooms available for a specified time interval and required capacity;
+* create bookings for selected rooms;
+* select additional services for a booking;
+* calculate the total booking price based on the booking time and selected services;
+* retrieve existing bookings for testing and verification.
+
+The API validates booking periods, prevents overlapping bookings for the same room, and checks that the selected services are available in the requested room.
+
 ## Technologies
 
 * .NET 9
